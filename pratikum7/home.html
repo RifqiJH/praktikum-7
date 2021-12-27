@@ -1,0 +1,18 @@
+<style>
+    .dark-mode {
+        background-color: black;
+        color: white;
+    }
+</style>
+<script type= "text/javascript" src = "provinces.js"></script>
+
+<div style='text-align:center;'>
+	Select Province (with city):   <select id="province" name ="province"></select> </br></br>
+	Select City: <select name ="city" id ="city"></select>  </br> </br> <hr/>
+    <button onclick="myFunction()">Toggle dark mode</button>
+</div>
+
+<script language="javascript">
+	populateProvinces("province", "city"); // first parameter is id of country drop-down and second parameter is id of state drop-down
+    myFunction();
+</script>
